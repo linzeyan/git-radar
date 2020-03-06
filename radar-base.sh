@@ -96,7 +96,7 @@ prepare_zsh_colors() {
   COLOR_BRANCH="%{${GIT_RADAR_COLOR_BRANCH:-$reset_color}%}"
   MASTER_SYMBOL="${GIT_RADAR_MASTER_SYMBOL:-"%{$reset_color%}$italic_m%{$reset_color%}"}"
 
-  PROMPT_FORMAT="${GIT_RADAR_FORMAT:-" %{$fg_bold[grey]%}git:(%{$reset_color%}%{remote: }%{branch}%{ :local}%{$fg_bold[grey]%})%{$reset_color%}%{ :stash}%{ :changes}"}"
+  PROMPT_FORMAT="${GIT_RADAR_FORMAT:-"%{$fg_bold[blue]%}git:(%{$reset_color%}%{remote: }%{branch}%{ :local}%{$fg_bold[blue]%})%{$reset_color%}%{ :stash}%{ :changes}"} "
 
   RESET_COLOR_LOCAL="%{${GIT_RADAR_COLOR_LOCAL_RESET:-$reset_color}%}"
   RESET_COLOR_REMOTE="%{${GIT_RADAR_COLOR_REMOTE_RESET:-$reset_color}%}"
